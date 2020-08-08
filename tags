@@ -12,5 +12,6 @@ join	get-vocab-sentences/config.py	/^from os.path import join, dirname$/;"	i
 jq	get-vocab-sentences/get-sentences.py	/^import jq$/;"	i
 main	get-vocab-sentences/get-sentences.py	/^def main():$/;"	f
 max_level	get-vocab-sentences/config.py	/^max_level = int(getenv('MAX_LEVEL'))$/;"	v
+min_level	get-vocab-sentences/config.py	/^min_level = int(getenv('MIN_LEVEL'))$/;"	v
 r	get-vocab-sentences/get-sentences.py	/^import requests as r$/;"	i
 root_url	get-vocab-sentences/config.py	/^root_url = getenv('API_ROOT_URL')$/;"	v
