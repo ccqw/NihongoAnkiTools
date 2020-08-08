@@ -3,8 +3,7 @@ import config
 import jq
 import requests as r
 
-
-if name == '__main__':
+def main():
     headers = {'Authorization': 'Bearer {}'.format(config.api_key)}
     levels = [x + 1 for x in range(config.max_level)]
     uri = 'subjects?types=vocabulary&level='
@@ -22,4 +21,8 @@ if name == '__main__':
             except StopIteration:
                 break
 
-    # TODO output as csv for import to Anki
+    # TODO output as tsv for import to Anki
+
+
+if __name__ == '__main__':
+    main()

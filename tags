@@ -7,15 +7,10 @@
 api_key	get-vocab-sentences/config.py	/^api_key = getenv('API_KEY')$/;"	v
 config	get-vocab-sentences/get-sentences.py	/^import config$/;"	i
 dirname	get-vocab-sentences/config.py	/^from os.path import join, dirname$/;"	i
-endpoint	get-vocab-sentences/get-sentences.py	/^        endpoint = config.root_url + level_uri$/;"	v
 getenv	get-vocab-sentences/config.py	/^from os import getenv$/;"	i
-headers	get-vocab-sentences/get-sentences.py	/^    headers = {'Authorization': 'Bearer {}'.format(config.api_key)}$/;"	v
 join	get-vocab-sentences/config.py	/^from os.path import join, dirname$/;"	i
 jq	get-vocab-sentences/get-sentences.py	/^import jq$/;"	i
-level_uri	get-vocab-sentences/get-sentences.py	/^        level_uri = '{}{}'.format(uri, level)$/;"	v
-levels	get-vocab-sentences/get-sentences.py	/^    levels = [x + 1 for x in range(config.max_level)]$/;"	v
+main	get-vocab-sentences/get-sentences.py	/^def main():$/;"	f
 max_level	get-vocab-sentences/config.py	/^max_level = int(getenv('MAX_LEVEL'))$/;"	v
 r	get-vocab-sentences/get-sentences.py	/^import requests as r$/;"	i
-response	get-vocab-sentences/get-sentences.py	/^        response = r.get(endpoint, headers=headers).json()$/;"	v
 root_url	get-vocab-sentences/config.py	/^root_url = getenv('API_ROOT_URL')$/;"	v
-words	get-vocab-sentences/get-sentences.py	/^        words = iter(jq.compile('.data[].data | {"word": .slug, "meanings": [.meanings[].meaning], "sentences": .context_sentences, "wk_level": %d}' % level).input(response))$/;"	v
