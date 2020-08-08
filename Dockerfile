@@ -11,4 +11,5 @@ RUN pip uninstall -y pipenv
 RUN cd $START_DIR
 
 COPY get-vocab-sentences/* /
-CMD ["python", "./get-sentences.py"]
+RUN chmod +x *.py
+#CMD ["python", "./get-sentences.py"]
