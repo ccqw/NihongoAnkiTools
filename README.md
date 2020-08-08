@@ -9,7 +9,7 @@ While the current focus is on the WaniKani API, I plan to add features that make
 - This project is written in [Python3](https://www.python.org/downloads/)
 - Python dependencies are managed with [Pipenv](https://pipenv.pypa.io/en/latest/)
 - Configuration (including secrets like the WaniKani API key) is provided to the application as environment variables, as per the [Twelve-Factor App](https://12factor.net) approach
-* `jq` is the library in use for querying and reshaping JSON data
+- `jq` is the library in use for querying and reshaping JSON data
 
 ### Privileges
 When [creating your WaniKani API key](https://www.wanikani.com/settings/personal_access_tokens) for use with these scripts, a read-only token is perfectly sufficient, so you may leave all extra privilege boxes unchecked to created your key.
