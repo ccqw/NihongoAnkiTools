@@ -17,7 +17,8 @@ However you decide to run these scripts, you will need to provide your own `.env
 
 ```
 cp example.env .env
-# open in your preferred text editor and paste in your own WaniKani API key as the value of API_KEY
+# open in your preferred text editor 
+# and paste in your own WaniKani API key as the value of API_KEY
 vim .env
 ```
 
