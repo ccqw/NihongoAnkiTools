@@ -1,5 +1,7 @@
-# WaniKani2Anki
+# NihongoAnkiTools
 A set of utility scripts for getting data out of WaniKani and into your Anki database for custom usage. WaniKani is awesome, and I want the chance to do things besides kanji/radicals/vocabulary -> English with their excellent study materials, like focus on reading the example sentences. I hope this growing collection of scripts helps others to do the same.
+
+While the current focus is on the WaniKani API, I plan to add features that make use of the [Forvo API](https://forvo.com) for additional capacity to do native audio imports, and other APIs and libraries. Suggestions of valuable sources to integrate are very welcome.
 
 ## Usage Notes
 
